@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping(value = "/api/v1/contact")
 @CrossOrigin(value = "https://app-contacto.netlify.app/")
+@RestController
+@RequestMapping(value = "api/v1/contact")
 public class ContactControllers {
 
     @Autowired

@@ -5,9 +5,9 @@ import com.Cristian.login.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
-@RequestMapping(value = "/api/v1/")
 @CrossOrigin(value = "https://app-contacto.netlify.app/")
+@RestController
+@RequestMapping(value = "api/v1/")
 public class LoginControllers {
 
     @Autowired
