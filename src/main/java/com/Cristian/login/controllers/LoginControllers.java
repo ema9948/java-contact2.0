@@ -13,7 +13,7 @@ public class LoginControllers {
     @Autowired
     private UserDaoImp dao;
 
-    @PostMapping("login")
+    @PostMapping(value = "login")
     public User login (@RequestBody User user){
        User data =  dao.login(user);
        if(data == null){
@@ -25,7 +25,7 @@ public class LoginControllers {
        return  data;
     }
 
-    @PostMapping("register")
+    @PostMapping( value = "register")
     public  boolean register(@RequestBody User user){
         return  dao.register(user);
     }

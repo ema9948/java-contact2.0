@@ -15,26 +15,26 @@ public class ContactControllers {
     @Autowired
     private ContactactDaoImp contactactDaoImp;
 
-    @GetMapping("/{id}")
+    @GetMapping(value = "/{id}")
     public List<Contacto> list (@PathVariable Long id){
 
        return contactactDaoImp.list(id);
 
     }
 
-    @PostMapping("agregar")
+    @PostMapping(value = "agregar")
     public Boolean agregar(@RequestBody Contacto contacto){
          contactactDaoImp.agregar(contacto);
         return  null;
     }
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping(value = "/delete/{id}")
     public  Boolean eliminar(@PathVariable Long id){
         contactactDaoImp.eliminar(id);
         return  null;
     }
 
 
-    @PostMapping("/edit")
+    @PostMapping(value = "/edit")
     public Boolean upadte(@RequestBody Contacto contacto){
         contactactDaoImp.update(contacto);
         return  null;
