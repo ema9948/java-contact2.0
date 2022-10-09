@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/v1/contact")
-@CrossOrigin(value = "http://localhost:3000/")
+@CrossOrigin(value = "https://app-contacto.netlify.app/")
 public class ContactControllers {
 
     @Autowired
